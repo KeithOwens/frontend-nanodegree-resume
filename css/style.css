@@ -36,7 +36,7 @@ h2 {
   font-size: 24px;
   color: #999;
   line-height: 29px;
-  padding: 10px;
+  padding: 5px;
 }
 
 h3 {
@@ -61,6 +61,94 @@ h5 {
 
 }
 
+@media print {
+	img {
+	  display: none;
+	}
+
+	.biopic {
+	  display: none;
+	}
+
+	#lets-connect {
+	  display: none;
+	}
+
+	#map {
+	  display: none;
+	}
+
+	#mapDiv {
+	  display: none;
+	}
+
+	.internationalize{
+	  display: none;
+	}
+	
+	h1 {
+	  font-size: 40px;
+	  line-height: 48px;
+	  display: inline;
+	}
+
+	h2 {
+	  font-weight: bold;
+	  font-size: 24px;
+	  line-height: 29px;
+	  padding: 5px;
+	}
+
+	h3 {
+	  font-style: italic;
+	  font-size: 20px;
+	  line-height: 22px;
+	  padding: 5px
+	}
+
+	h4 {
+	  font-weight: bold;
+	  font-size: 14px;
+	  line-height: 17px;
+	}
+	
+	.date-text {
+	  font-style: italic;
+	  font-size: 14px;
+	  line-height: 16px;
+	  float: left;
+	}
+
+	.location-text {
+	  font-style: italic;
+	  font-size: 14px;
+	  line-height: 16px;
+	  float: right;
+	}
+
+	p {
+	  font-size: 14px;
+	  line-height: 21px;
+	}
+
+	a {
+	  text-decoration: none;
+	  margin-top: 10px;
+	  display: block;
+	}
+	
+    #skills-h3 {
+      display: inline;
+	  padding: 0;
+    }
+	
+	#header {
+	 
+	}
+	.welcome-message {
+	  display: none;
+	}
+}
 
 .date-text {
   font-style: italic;
@@ -112,12 +200,22 @@ a {
   color: #f5ae23;
 }
 
+.gray-text {
+  color: #a3a3a3;
+}
+
 .white-text {
   font-weight: bold;
   color: #fff;
 }
 
 .gray {
+  background-color: #f3f3f3;
+  padding-bottom: 10px;
+  clear:both;
+}
+
+.light-gray {
   background-color: #f3f3f3;
   padding-bottom: 10px;
   clear:both;
@@ -138,7 +236,6 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 10px;
 }
 
 .center-content {
@@ -150,7 +247,7 @@ ul {
 }
 
 .biopic {
-  float: left;
+  float: right;
   padding: 10px;
   width: 200px;
   display: none;
@@ -182,7 +279,7 @@ span {
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 767px) {
   #lets-connect {
     margin-top: 10%;
   }
@@ -206,9 +303,24 @@ span {
   padding-bottom: 5%;
 }
 
-@media only screen and (min-width: 750px) {
-  #skills-h3,
+@media only screen and (min-width: 767px) {
   .biopic {
     display: block;
   }
+}
+
+@media only screen and (min-width: 480px) {
+  #skills-h3 {
+    display: inline;
+	padding: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+	.flex-box {
+	  display: -webkit-block;
+	  display: inline;
+	  flex-direction: row;
+	  justify-content: center;
+	}
 }
