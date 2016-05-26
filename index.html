@@ -140,4 +140,15 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     }
   </script>
 </body>
+<footer> 
+  	<div id="ending">
+	</div>
+  <script>
+	var date = new Date();
+	var entry = 'Date Accessed: '+(date.getMonth()+1)+'/'+date.getDate()+'/'+date.getFullYear();
+	var HTMLdate = '<p>%data%</p>';
+	var formattedDate = HTMLdate.replace("%data%", entry);
+	$("#ending").append(formattedDate);
+  </script>
+</footer>
 </html>

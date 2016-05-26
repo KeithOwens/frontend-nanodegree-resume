@@ -1,4 +1,5 @@
 body,
+footer,
 div,
 ul,
 li,
@@ -148,6 +149,10 @@ h5 {
 	.welcome-message {
 	  display: none;
 	}
+	
+	#ending {
+	  display: none;
+	}
 }
 
 .date-text {
@@ -228,6 +233,11 @@ a {
 /* TODO: Replace with image later */
 #header {
   background-color: #484848;
+}
+
+#ending {
+  font-size: 20px;
+  text-align: center;
 }
 
 .flex-box {
